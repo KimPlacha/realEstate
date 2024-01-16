@@ -1,0 +1,19 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+}
+p{
+    line-height: 2;
+}
+
+/*header*/
+.site-init{
+    background-image: url(./img/header.jpg);
+    height: 400px;
+    text-align: center;
+}
