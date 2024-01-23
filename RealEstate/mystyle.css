@@ -1,13 +1,18 @@
 /*global*/
+:root{
+    --primary: rgb(182, 92, 19);
+    --secondary: rgb(16, 139, 16);
+}
+html{
+    font-size: 62.5%;
+}
 *{
     margin: 0;
     padding: 0;
 }
-
 body{
     font-family: arial;
 }
-
 a{
     text-decoration: none;
     color: white;
@@ -15,22 +20,29 @@ a{
 img{
     max-width: 100%;
 }
+h2{
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.4rem;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;;
+}
 
 /*utilities*/
 .flex-header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 10rem;
 }
 .flex-header-v{
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    height: 300px;
-    width: 80%;
-    margin: auto;
+    align-items: center;
+    height: 35vh;
 }
 .container{
     width: 80%;
@@ -48,16 +60,20 @@ img{
 /*header*/
 .site-init{
     background-image: url(./img/header.jpg);
-    height: 350px;
+    height: 40vh;
     background-size: cover;
     color: white;
 }
 .menu a{
-    margin-right: 15px;
+    margin-right: 2rem;
 
 }
 .site-init p{
-    font-size: 20px;
+    font-size: 2rem;
+}
+.site-second{
+    background-color: #222222;
+    color: white;
 }
 
 /*about us*/
@@ -68,35 +84,65 @@ img{
 
 }
 /*house-items*/
-.house-items{
+.flex-house-item{
     display: flex;
-    justify-content: space-between;
-    align-items: center s;
-    width: 300px;
-
+    justify-content: center;
+    gap: 1rem;
 }
-
+.house-item{
+    background-color: #dedede;
+    width: 40rem;
+}
+.house-item-text{
+    font-size: medium;
+}
+.price{
+    color:var(--secondary);
+    font-weight: bold;
+}
 .flex-houses{
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
-.price{
-    color: green;
-    font-weight: bold;
-    line-height: 2;
-}
 .flex-house-icons{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .flex-house-icons li{
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: flex-end;
 }
 .flex-house-icons img, p{
     margin-right: 20px;
+}
+/*contact form*/
+.form-container{
+
+}
+fieldset{
+    padding: 1rem;
+}
+legend, label, input{
+    font-size: 1.6rem;
+}
+.input-container{
+    margin: 1rem;
+}
+.input-container input,
+.input-container textarea{
+    width: 70%;
+    background-color: #dedede;
+    border: none;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+.input-container label{
+    display: inline-block;
+    width: 10rem;
+    text-align: right;
+    margin-right: 1rem;
 }
