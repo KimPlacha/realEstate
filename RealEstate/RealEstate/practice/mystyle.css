@@ -1,0 +1,11 @@
+.flex-container{
+    display: inline-black;
+    justify-content: space-between; 
+    align-items: flex-start;
+    background-color: ;
+
+}
+.flex.image{
+    margin: auto;
+}
+

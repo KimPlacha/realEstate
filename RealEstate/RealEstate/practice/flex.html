@@ -1,0 +1,89 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    max-width: 100%;
+}
+
+/*utilities*/
+.flex-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.flex-header-v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 300px;
+    width: 80%;
+    margin: auto;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/*header*/
+.site-init{
+    background-image: url(./img/header.jpg);
+    height: 350px;
+    background-size: cover;
+    color: white;
+}
+.menu a{
+    margin-right: 15px;
+
+}
+.site-init p{
+    font-size: 20px;
+}
+
+/*about us*/
+.flex-about{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+/*house-items*/
+.house-items{
+    background-color: #dedede;
+    width: 300px;
+}
+.flex-houses{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    color: green;
+    font-weight: bold;
+    line-height: 2;
+}
+.flex-house-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-house-icons li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: right;
+}
+.flex-house-icons img, p{
+    margin-right: 30px;
+}
